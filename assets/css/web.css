@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CUSTOMIZED SCROLLBAR */
+body::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FF2B00; /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+  border: 1px solid rgb(218, 218, 218); /* creates padding around scroll thumb */
+}
+
+/* CUSTOMIZED NAVBAR */
+
+#header.header-scrolled, #header.header-inner-pages {
+ 
+}
+
+.nav-link {
+  color: #fff; /* Set the color to #FF2B00 */
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.nav-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  color: #FF2B00;
+  background: #FF2B00;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-link:hover:after {
+  color: #FF2B00; /* Set the color to #26DB23 */
+  width: 100%;
+  left: 0;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  font-weight: bold; /* Highlight active link */
+  color: #FF2B00;
+}
+
+@media (max-width: 991px) {
+  .nav-link{
+  background-color: white;
+  }
+}
+
+
+.box1{
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.box2{
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+}
+
+.small-card {
+  position: relative;
+}
+
+.image-container {
+position: relative;
+overflow: hidden;
+background-color: #E2F0E2;
+}
+
+.card-img-top {
+object-fit: cover;
+width: 100%;
+height: 400px;
+}
